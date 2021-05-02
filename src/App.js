@@ -26,8 +26,9 @@ function App() {
         <div>
           <img src={user.picture.large} alt="user" />
           <h1>Hi, I am {user.name.first + " " + user.name.last} from {user.location.country}.</h1>
-          <h2>I am {user.dob.age} years old.</h2>
+          <h2>Gender: {user.gender}</h2>
           <h3>My email adress is {user.email}</h3>
+          <h3>My phone number is {user.phone}</h3>
           <button className="btn-change" onClick={() => setLoading(true)}>Change User</button>
         </div>
       )}
